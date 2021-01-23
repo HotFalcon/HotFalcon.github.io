@@ -50,7 +50,7 @@ var background = new sjs.Image("Images/space7.png");
 background.setSize(sjs.getWidth(), sjs.getHeight());
 
 //Player Properties below Here
-var player = new sjs.Image("Images/sword_right.png");
+var player = new sjs.Image("Images/sword_Right.png");
 player.type = "player";
 player.setSize(100,50);
 player.friction = .15;
@@ -58,12 +58,12 @@ player.accel = .3;
 player.center();
 
 sjs.keyDown(RIGHT_KEY,function(){
-player.setImage("Images/sword_right.png");
+player.setImage("Images/sword_Right.png");
 player.pushRight();
 });
 
 sjs.keyDown(LEFT_KEY,function(){
-player.setImage("Images/sword_left.png");
+player.setImage("Images/sword_Left.png");
 player.pushLeft();
 });
 
