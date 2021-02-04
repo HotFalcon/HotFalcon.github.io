@@ -109,7 +109,7 @@ var soundEffect = new Audio('Music/oof.mp3');
 sjs.onHit("ball","paddle", function(ball,paddle){
 score = score + 1;
 score_txt.setText("Score: "+score);
-if(score == 5){
+if(score == 30){
 var newball = new sjs.Image("Images/spike.png");
 newball.type = "newball";
 newball.setSize(50,50);
