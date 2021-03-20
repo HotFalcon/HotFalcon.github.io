@@ -1,4 +1,4 @@
-# HotFalcon1.github.io
+# HotFalcon.github.io
 Very good code games
 
-https://hotfalcon1.github.io/
+https://hotfalcon.github.io/
