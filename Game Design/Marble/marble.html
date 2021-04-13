@@ -50,7 +50,7 @@ mass: 1,
 restitution: 0.9
 }, scene);
 
-BABYLON.SceneLoader.ImportMesh(null, "resources/", "block.obj", scene, function(meshes) {
+BABYLON.SceneLoader.ImportMesh(null, "resources/", "speed.obj", scene, function(meshes) {
 var boostMesh = meshes[0], boosts = [];
 boostMesh.material = new BABYLON.StandardMaterial("boostMaterial", scene);
 boostMesh.material.diffuseColor = new BABYLON.Color3(1, 1, 0);
