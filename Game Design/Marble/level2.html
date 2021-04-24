@@ -141,6 +141,10 @@ if (currentT > 0.99) {
 win();
 }
 
+if (currentT > 0.02) {
+music12();
+}
+
 if (playerSphere.position.y < -10) {
 lost();
 }
@@ -149,6 +153,23 @@ if(startTime) {
 timer.innerHTML = ((Date.now() - startTime) / 1000).toFixed(2).replace('.',':');
 }
 });
+
+var playM1 = new Audio('Music/alpha.mp3');
+var toggle = true;
+var musicOn = false;
+
+function music12(){
+if(toggle == true){
+if(musicOn == false){
+playM1.play();
+musicOn = true;
+}
+toggle = false;
+setTimeout(function(){
+toggle = true;
+},1000);
+} //end if toggle statement
+}
 
 function drawPoint(x, z, zrot, scene) {
 var point = BABYLON.MeshBuilder.CreateBox('point', {
@@ -237,7 +258,7 @@ window.addEventListener('resize', engine.resize.bind(engine));
 }
 
 function win(){
-window.location = "level2.html";
+window.location = "level3.html";
 alert("You WIN!");
 }
 
