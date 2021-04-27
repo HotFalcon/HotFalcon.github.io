@@ -67,7 +67,9 @@ boosts.push(newBoost);
 }
 
 // Place boosts here
-boostAt(xFn, zFn, 0.5);
+boostAt(xFn, zFn, 0.82);
+boostAt(xFn, zFn, 0.15);
+boostAt(xFn, zFn, 0.438);
 boostAt(xFn, zFn, 0.2);
 
 scene.registerAfterRender(function() {
@@ -97,9 +99,14 @@ var light = new BABYLON.HemisphericLight('light1', new BABYLON.Vector3(0, 1, 0),
 //WALLS AND RAMPS
 rampAt(xFn, zFn, 0.4, -Math.PI / 4, scene);
 rampAt(xFn, zFn, 0.1, -Math.PI / 4, scene);
-rampAt(xFn, zFn, 0.8, -Math.PI / 4, scene);
+rampAt(xFn, zFn, 0.583, -Math.PI / 4, scene);
+rampAt(xFn, zFn, 0.38, -Math.PI / 4, scene);
+rampAt(xFn, zFn, 0.07, -Math.PI / 4, scene);
 
 wallAt(xFn, zFn, 0.92, -6.1, scene);
+wallAt(xFn, zFn, 0.32, -6.1, scene);
+wallAt(xFn, zFn, 0.289, -6.1, scene);
+wallAt(xFn, zFn, 0.47, -6.1, scene);
 wallAt(xFn, zFn, 0.7, -6.1, scene);
 wallAt(xFn, zFn, 0.03, 6.1, scene);
 wallAt(xFn, zFn, 0.14, 6.1, scene);
