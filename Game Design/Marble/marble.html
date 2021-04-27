@@ -68,6 +68,7 @@ boosts.push(newBoost);
 // Place boosts here
 boostAt(xFn, zFn, 0.05);
 boostAt(xFn, zFn, 0.2);
+boostAt(xFn, zFn, 0.7);
 
 scene.registerAfterRender(function() {
 boosts.forEach(function(boost, i){
@@ -96,8 +97,12 @@ var light = new BABYLON.HemisphericLight('light1', new BABYLON.Vector3(0, 1, 0),
 //WALLS AND RAMPS
 rampAt(xFn, zFn, 0.3, -Math.PI / 4, scene);
 rampAt(xFn, zFn, 0.8, -Math.PI / 4, scene);
+rampAt(xFn, zFn, 0.148, -Math.PI / 4, scene);
 
-wallAt(xFn, zFn, 0.03, -6.1, scene);
+wallAt(xFn, zFn, 0.039, 6.1, scene);
+wallAt(xFn, zFn, 0.46, -6.1, scene);
+wallAt(xFn, zFn, 0.03, 6.1, scene);
+wallAt(xFn, zFn, 0.92, -6.1, scene);
 wallAt(xFn, zFn, 0.05, 6.1, scene);
 wallAt(xFn, zFn, 0.4, -6.1, scene);
 
