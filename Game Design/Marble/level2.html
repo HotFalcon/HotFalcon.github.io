@@ -65,6 +65,7 @@ boosts.push(newBoost);
 
 // Place boosts here
 boostAt(xFn, zFn, 0.05);
+boostAt(xFn, zFn, 0.73);
 boostAt(xFn, zFn, 0.2);
 
 scene.registerAfterRender(function() {
@@ -93,13 +94,18 @@ var light = new BABYLON.HemisphericLight('light1', new BABYLON.Vector3(0, 1, 0),
 
 //WALLS AND RAMPS
 rampAt(xFn, zFn, 0.3, -Math.PI / 4, scene);
+rampAt(xFn, zFn, 0.93, -Math.PI / 4, scene);
 rampAt(xFn, zFn, 0.7, -Math.PI / 4, scene);
+rampAt(xFn, zFn, 0.4, -Math.PI / 4, scene);
 rampAt(xFn, zFn, 0.6, -Math.PI / 4, scene);
 
 wallAt(xFn, zFn, 0.15, -6.1, scene);
-wallAt(xFn, zFn, 0.8, -6.1, scene);
-wallAt(xFn, zFn, 0.01, 6.1, scene);
-wallAt(xFn, zFn, 0.4, 6.1, scene);
+wallAt(xFn, zFn, 0.733, -6.1, scene);
+wallAt(xFn, zFn, 0.693, 6.1, scene);
+wallAt(xFn, zFn, 0.325, -6.1, scene);
+wallAt(xFn, zFn, 0.872, -6.1, scene);
+wallAt(xFn, zFn, 0.014, 6.1, scene);
+wallAt(xFn, zFn, 0.473, 6.1, scene);
 
 var startTime;
 var timer = document.querySelector('#timer');
