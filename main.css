@@ -1,0 +1,12 @@
+.navitem {
+    list-style-type:none;
+    display:inline;
+    margin-right:.3em;
+    padding:2px 5px;
+    }
+    
+    #navmenu {
+    text-align:center;
+    background-color:#4EE2EC;
+    color:#c55e3b;
+    }
