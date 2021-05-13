@@ -2,6 +2,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
 <title>3D Game Design</title>
+<script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script>
 <script src="cannon.js"></script>
 <script src="babylon.js"></script>
 <script src="babylon.objFileLoader.min.js"></script>
@@ -26,15 +27,13 @@ var scene = new BABYLON.Scene(engine);
 var gravityVector = new BABYLON.Vector3(0, -9.81, 0);
 scene.enablePhysics(gravityVector, new BABYLON.CannonJSPlugin());
 
-scene.clearColor = new BABYLON.Color3(0.5, 0.8, 0.5);
+scene.clearColor = new BABYLON.Color3(("+r"), 200, 6);
 
-var _xFn = function(t) {var fns = [function(t) {return (Math.pow((1-t),3)*0.005)+(3*t*Math.pow((1-t),2)*0.1)+(3*Math.pow(t,2)*(1-t)*0.025)+(Math.pow(t,3)*0.17)},function(t) {return (Math.pow((1-t),3)*0.17)+(3*t*Math.pow((1-t),2)*0.315)+(3*Math.pow(t,2)*(1-t)*0.3925)+(Math.pow(t,3)*0.1275)},function(t) {return (Math.pow((1-t),3)*0.1275)+(3*t*Math.pow((1-t),2)*-0.1375)+(3*Math.pow(t,2)*(1-t)*0.4725)+(Math.pow(t,3)*0.23)},function(t) {return (Math.pow((1-t),3)*0.23)+(3*t*Math.pow((1-t),2)*-0.0125)+(3*Math.pow(t,2)*(1-t)*0.445)+(Math.pow(t,3)*0.3675)},function(t) {return (Math.pow((1-t),3)*0.3675)+(3*t*Math.pow((1-t),2)*0.29)+(3*Math.pow(t,2)*(1-t)*0.9675)+(Math.pow(t,3)*0.63)},function(t) {return (Math.pow((1-t),3)*0.63)+(3*t*Math.pow((1-t),2)*0.2925)+(3*Math.pow(t,2)*(1-t)*0.8)+(Math.pow(t,3)*0.545)},function(t) {return (Math.pow((1-t),3)*0.545)+(3*t*Math.pow((1-t),2)*0.29)+(3*Math.pow(t,2)*(1-t)*0.77)+(Math.pow(t,3)*0.765)},function(t) {return (Math.pow((1-t),3)*0.765)+(3*t*Math.pow((1-t),2)*0.76)+(3*Math.pow(t,2)*(1-t)*0.8925)+(Math.pow(t,3)*0.8925)},function(t) {return (Math.pow((1-t),3)*0.8925)+(3*t*Math.pow((1-t),2)*0.8925)+(3*Math.pow(t,2)*(1-t)*0.985)+(Math.pow(t,3)*0.985)}];var i = Math.max(0,Math.min(8, Math.floor(t * 9)));return fns[i]((t - (i/9)) * 9);};
-var _yFn = function(t) {var fns = [function(t) {return (Math.pow((1-t),3)*0.006812477111816406)+(3*t*Math.pow((1-t),2)*0.025)+(3*Math.pow(t,2)*(1-t)*0.3718124771118164)+(Math.pow(t,3)*0.1543124771118164)},function(t) {return (Math.pow((1-t),3)*0.1543124771118164)+(3*t*Math.pow((1-t),2)*-0.06318752288818359)+(3*Math.pow(t,2)*(1-t)*0.3293124771118164)+(Math.pow(t,3)*0.3443124771118164)},function(t) {return (Math.pow((1-t),3)*0.3443124771118164)+(3*t*Math.pow((1-t),2)*0.3593124771118164)+(3*Math.pow(t,2)*(1-t)*0.5268124771118164)+(Math.pow(t,3)*0.5318124771118165)},function(t) {return (Math.pow((1-t),3)*0.5318124771118165)+(3*t*Math.pow((1-t),2)*0.5368124771118165)+(3*Math.pow(t,2)*(1-t)*0.9143124771118164)+(Math.pow(t,3)*0.9343124771118164)},function(t) {return (Math.pow((1-t),3)*0.9343124771118164)+(3*t*Math.pow((1-t),2)*0.9543124771118164)+(3*Math.pow(t,2)*(1-t)*0.7193124771118165)+(Math.pow(t,3)*0.7468124771118164)},function(t) {return (Math.pow((1-t),3)*0.7468124771118164)+(3*t*Math.pow((1-t),2)*0.7743124771118164)+(3*Math.pow(t,2)*(1-t)*0.4018124771118164)+(Math.pow(t,3)*0.4143124771118164)},function(t) {return (Math.pow((1-t),3)*0.4143124771118164)+(3*t*Math.pow((1-t),2)*0.4268124771118164)+(3*Math.pow(t,2)*(1-t)*0.06181247711181641)+(Math.pow(t,3)*0.2018124771118164)},function(t) {return (Math.pow((1-t),3)*0.2018124771118164)+(3*t*Math.pow((1-t),2)*0.3418124771118164)+(3*Math.pow(t,2)*(1-t)*0.4718124771118164)+(Math.pow(t,3)*0.2918124771118164)},function(t) {return (Math.pow((1-t),3)*0.2918124771118164)+(3*t*Math.pow((1-t),2)*0.11181247711181641)+(3*Math.pow(t,2)*(1-t)*0.0743124771118164)+(Math.pow(t,3)*0.0743124771118164)}];var i = Math.max(0,Math.min(8, Math.floor(t * 9)));return fns[i]((t - (i/9)) * 9);};
-
-
-
-
-
+var _xFn = function(t) {var fns = [function(t) {return (Math.pow((1-t),3)*0.0025)+(3*t*Math.pow((1-t),2)*0.01)+(3*Math.pow(t,2)*(1-t)*0.755)+(Math.pow(t,3)*0.705)},function(t) {return (Math.pow((1-t),3)*0.705)+(3*t*Math.pow((1-t),2)*0.655)+(3*Math.pow(t,2)*(1-t)*0.315)+(Math.pow(t,3)*0.7025)},function(t) {return (Math.pow((1-t),3)*0.7025)+(3*t*Math.pow((1-t),2)*1.09)+(3*Math.pow(t,2)*(1-t)*0.3125)+(Math.pow(t,3)*0.9625)}];var i = Math.max(0,Math.min(2, Math.floor(t * 3)));return fns[i]((t - (i/3)) * 3);};
+var _yFn = function(t) {var fns = [function(t) {return (Math.pow((1-t),3)*0.009312477111816406)+(3*t*Math.pow((1-t),2)*0.8368124771118164)+(3*Math.pow(t,2)*(1-t)*0.6968124771118164)+(Math.pow(t,3)*0.4618124771118164)},function(t) {return (Math.pow((1-t),3)*0.4618124771118164)+(3*t*Math.pow((1-t),2)*0.2268124771118164)+(3*Math.pow(t,2)*(1-t)*0.3418124771118164)+(Math.pow(t,3)*0.1343124771118164)},function(t) {return (Math.pow((1-t),3)*0.1343124771118164)+(3*t*Math.pow((1-t),2)*-0.07318752288818359)+(3*Math.pow(t,2)*(1-t)*0.5693124771118164)+(Math.pow(t,3)*0.2268124771118164)}];var i = Math.max(0,Math.min(2, Math.floor(t * 3)));return fns[i]((t - (i/3)) * 3);};
+/* START CURVE DATA 
+{"start":[1,3.7249908447265625],"init":[4,334.72499084472656],"segments":[{"a":[302,278.72499084472656],"b":[282,184.72499084472656]},{"a":[126,136.72499084472656],"b":[281,53.72499084472656]},{"a":[125,227.72499084472656],"b":[385,90.72499084472656]}]}
+   END CURVE DATA */
 
 var xFn = function(t) { return 650 * _xFn(t); }
 var zFn = function(t) { return 650 * _yFn(t); }
@@ -67,7 +66,7 @@ boosts.push(newBoost);
 }
 
 // Place boosts here
-boostAt(xFn, zFn, 0.5);
+boostAt(xFn, zFn, 0.05);
 boostAt(xFn, zFn, 0.2);
 
 scene.registerAfterRender(function() {
@@ -95,14 +94,12 @@ var light = new BABYLON.HemisphericLight('light1', new BABYLON.Vector3(0, 1, 0),
 
 
 //WALLS AND RAMPS
-rampAt(xFn, zFn, 0.4, -Math.PI / 4, scene);
-rampAt(xFn, zFn, 0.1, -Math.PI / 4, scene);
+rampAt(xFn, zFn, 0.3, -Math.PI / 4, scene);
 rampAt(xFn, zFn, 0.8, -Math.PI / 4, scene);
 
-wallAt(xFn, zFn, 0.92, -6.1, scene);
-wallAt(xFn, zFn, 0.7, -6.1, scene);
-wallAt(xFn, zFn, 0.03, 6.1, scene);
-wallAt(xFn, zFn, 0.14, 6.1, scene);
+wallAt(xFn, zFn, 0.03, -6.1, scene);
+wallAt(xFn, zFn, 0.05, 6.1, scene);
+wallAt(xFn, zFn, 0.4, -6.1, scene);
 
 var startTime;
 var timer = document.querySelector('#timer');
@@ -135,6 +132,9 @@ if (keys.d) {
 playerSphere.applyImpulse(right, playerSphere.getAbsolutePosition());
 }
 
+
+
+
 var currentT = tLookup(xFn, zFn, 500, playerSphere.position.x, playerSphere.position.z);
 
 var angle = (derivAngle(currentT, xFn, zFn) - (Math.PI));
@@ -158,6 +158,7 @@ timer.innerHTML = ((Date.now() - startTime) / 1000).toFixed(2).replace('.',':');
 }
 });
 
+
 var playM1 = new Audio('Music/alpha.mp3');
 var toggle = true;
 var musicOn = false;
@@ -174,6 +175,27 @@ toggle = true;
 },1000);
 } //end if toggle statement
 }
+
+var r=200;
+var g=100;
+var b=0;
+
+setInterval(function(){
+  if(r > 0 && b == 0){
+    r--;
+    g++;
+  }
+  if(g > 0 && r == 0){
+    g--;
+    b++;
+  }
+  if(b > 0 && g == 0){
+    r++;
+    b--;
+  }
+},10);
+
+
 
 function drawPoint(x, z, zrot, scene) {
 var point = BABYLON.MeshBuilder.CreateBox('point', {
@@ -262,13 +284,15 @@ window.addEventListener('resize', engine.resize.bind(engine));
 }
 
 function win(){
-window.location.reload();
+window.location = "level2.html";
 alert("You WIN!");
 }
 
 function lost(){
 window.location.reload();
 }
+
+
 </script>
 <style>
 html, body {
@@ -296,5 +320,28 @@ font: 52px sans-serif;
 <body onload="start()">
 <canvas id="renderCanvas"></canvas>
 <div id="timer">00:00</div>
+<head>
+	<style type="text/css">
+		body {
+			background-color: red;
+			transition: background-color 7s;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		var colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+
+		var i = 1;
+
+		window.setInterval(function(){
+			document.body.style.backgroundColor = colors[i];
+			i++;
+			if (i === colors.length){
+				i=0;
+			}
+		}, 5000);
+	</script>
+</body>
 </body>
 </html>

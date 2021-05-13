@@ -96,7 +96,8 @@ rampAt(xFn, zFn, 0.3, -Math.PI / 4, scene);
 rampAt(xFn, zFn, 0.7, -Math.PI / 4, scene);
 rampAt(xFn, zFn, 0.6, -Math.PI / 4, scene);
 
-wallAt(xFn, zFn, 0.15, -6.1, scene);
+var idk = 1 + Math.random();
+wallAt(xFn, zFn, (idk), -6.1, scene);
 wallAt(xFn, zFn, 0.8, -6.1, scene);
 wallAt(xFn, zFn, 0.01, 6.1, scene);
 wallAt(xFn, zFn, 0.4, 6.1, scene);
@@ -263,7 +264,7 @@ alert("You WIN!");
 }
 
 function lost(){
-window.location = "marble.html";
+window.location.reload();
 
 }
 </script>
