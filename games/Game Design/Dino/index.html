@@ -7,65 +7,6 @@
 function start(){
 sjs.open();
 
-//Background Music
-var playM = new Audio('Music/holiday.mp3');
-var toggle = true;
-var musicOn = false;
-sjs.keyDown(SPACE_KEY, function(){
-if(toggle == true){
-if(musicOn == false){
-playM.play();
-musicOn = true;
-} else {
-playM.pause();
-musicOn = false;
-}
-toggle = false;
-setTimeout(function(){
-toggle = true;
-},1000);
-loop = true;
-} //end if toggle statement
-}); //end keyDown function
-
-var playM1 = new Audio('Music/mood.mp3');
-var toggle = true;
-var musicOn = false;
-sjs.keyDown(M_KEY, function(){
-if(toggle == true){
-if(musicOn == false){
-playM1.play();
-musicOn = true;
-} else {
-playM1.pause();
-musicOn = false;
-}
-toggle = false;
-setTimeout(function(){
-toggle = true;
-},1000);
-} //end if toggle statement
-}); //end keyDown function
-
-var playM2 = new Audio('Music/Overcomer.mp3');
-var toggle = true;
-var musicOn = false;
-sjs.keyDown(A_KEY, function(){
-if(toggle == true){
-if(musicOn == false){
-playM2.play();
-musicOn = true;
-} else {
-playM2.pause();
-musicOn = false;
-}
-toggle = false;
-setTimeout(function(){
-toggle = true;
-},1000);
-} //end if toggle statement
-}); //end keyDown function
-
 var soundEffect1 = new Audio('Music/bruh.mp3');
 
 sjs.keyDown(B_KEY,function(){
@@ -99,7 +40,6 @@ info_text.bottom().centerH();
 </script>
 </head>
 <body onload="start()" style="margin:auto;background:#C5908E;">
-  <center><a href="https://hotfalcon.github.io">Back</a></center>
 <h1> Dino Game </h1>
 
 <div id="target" style="margin:auto;background:#CD7F32;"></div>
