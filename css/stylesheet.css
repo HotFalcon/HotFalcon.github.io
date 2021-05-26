@@ -22,7 +22,7 @@
     }
 
     @font-face {
-        font-family: 'minecraft';
+        font-family: 'minecraftten';
         src: url('fonts/minecraft-ten-webfont.eot');
         src: url('fonts/minecraft-ten-webfont.eot?#iefix') format('embedded-opentype'),
              url('fonts/minecraft-ten-webfont.woff2') format('woff2'),
@@ -31,5 +31,4 @@
              url('fonts/minecraft-ten-webfont.svg#minecraftten') format('svg');
         font-weight: normal;
         font-style: normal;
-    
     }
