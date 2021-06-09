@@ -15,11 +15,16 @@
             }
     
     #form {
+    background-color:lightblue;
     border:3px solid blue;
     height:700px;
     float:right;
     margin:10px;
     }
+
+    #name {
+        width:150px;
+        margin-right:8px; }
 
     @font-face {
         font-family: 'minecraft';
@@ -33,3 +38,23 @@
         font-style: normal;
     
     }
+
+    #header {
+        text-align:center;
+        background:radial-gradient(circle at 100% 100%, rgba(99, 228, 131, 0.384), rgba(0, 0, 255, 0.404));
+        font-size:2.5em;
+        font-family: minecraft;
+        text-decoration:bold;
+        color:white;
+        border-radius:10px;
+        margin-left:-16px;
+        margin-right:-16px;
+        margin-bottom:15px;
+        }
+
+    .icon{
+        height: 45px;
+        width: 45px;
+        padding-right:10px;
+    }
+            

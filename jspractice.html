@@ -1,0 +1,84 @@
+<html>
+<head>
+<title> JavaScript Practice </title>
+<script src="https://simplycodingcourses.com/files/simply.js"></script>
+<script>
+    function start(){
+        var age = 33;
+        var name = "Charles Xavier";
+        alert(name + " is " + age);
+    } //end start function
+
+    function math() {
+        var calc = 69 * 420;
+        alert(calc);
+    }//end run function
+
+    function question(){
+        var question= prompt("What is MY favorite color?");
+        if(question=="orange"){
+            alert("Correct");
+        } else {
+            alert("wrong!")
+        }
+    }
+
+    function rate(){
+        var q = prompt("How much to you like JavaScript 1 - 10?");
+        if(q < 4){
+        alert("Don't give up, you're so close I can feel it!");
+        }
+        else if(q < 7){
+        alert("Just wait, it gets better!");
+        } else {
+        alert("You're in for a real treat!");
+        }
+    }//end function rate
+
+    function change(){
+        var edit = document.querySelector("#find");
+        edit.innerHTML = "This Page is Full of Suprises!";
+    }//end function change
+
+    var pass = 1;
+function toggle(){
+    var twitch = document.querySelector("#rotate");
+    if (pass == 1){
+        twitch.innerHTML = "You didn't see anything...";
+pass = 2;
+return;
+} else if(pass == 2) {
+    twitch.innerHTML = "<img src='https://simplycoding.s3-us-west-2.amazonaws.com/Images/piskelFish.png' />";
+pass = 3;
+return;
+}else {
+twitch.innerHTML = "Ta-da!";
+pass = 1;
+return;
+}
+} //end function toggle
+
+function joke(){
+    var q = prompt("What color was George Washington's white horse?");
+while(q != "white"){
+    q = prompt("What color was George Washington's white horse?");
+}
+alert("Yes, of course!");
+}
+
+
+
+</script>
+</head>
+<body>
+    <div id="rotate">This text may change, even into an picture</div>
+    <div id="find">My JavaScript Practice Page</div>
+    <input type="button" onclick="start()" value="Alert Me">
+    <input type="button" onclick="math()" value="Calculate">
+    <input type="button" onclick="question()" value="Ez question!">
+    <input type="button" onclick="rate()" value="Rate JS">
+    <input type="button" onclick="change()" value="Magic Button">
+    <input type="button" onclick="toggle()" value="Change Button">
+    <input type="button" onclick="joke()" value="Joke">
+</body>
+</html>
