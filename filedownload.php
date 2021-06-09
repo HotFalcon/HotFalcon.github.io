@@ -32,7 +32,7 @@ $ForceFileDownload = "no";
 //    The directory must be writable, which might require 
 //    777 permissions, depending on how PHP is configured.
 
-$LocationOfLogFile = "/diownload/log.txt";
+$LocationOfLogFile = "/download/log.txt";
 
 // End of customization section
 /////////////////////////////////////////
