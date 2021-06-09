@@ -15,7 +15,7 @@
 // Specify the location of the downloadable file 
 //    (location relative to the document root directory).
 
-$LocationOfDownloadableFile = "/download/downloads/OP_Piglin_Barter.mcpack";
+$LocationOfDownloadableFile = "https://hotfalcon.net/download/downloads/OP_Piglin_Barter.mcpack";
 
 
 // Place 2:
